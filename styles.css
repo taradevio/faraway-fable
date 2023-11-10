@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: var(--scroll-padding, 9rem);
+}
+
+.nav-utama {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0.5em;
+    background-color: #006363;
+    position: sticky;
+    top: 0;
+}
+
+header {
+    display: inline;
+}
+
+.nav-utama li a{
+    color: #FFFFFF;
+}
+
+.nav-utama .title a {
+    color: #FFFFFF; 
+}
+
+nav .nav-links {
+    display: flex;
+    gap: 1.5em;
+    padding-right: 2.5rem;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+nav > .title {
+    font-size: 30px;
+    padding-left: 2.5rem;
+}
+
+.description > .intro {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.cover {
+    padding-top: 0.5em;
+}
+
+.cover > img {
+    border-radius: 35px;
+    height: 500px;
+}
+
+.container {
+    display: flex;
+    margin: 1em 2.5em;
+}
+
+.description > h1, h2 {
+    line-height: 1.5;
+}
+
+.description > h2 {
+    text-align: center;
+    padding-left: 5.5em;
+    padding-top: 2em;
+    padding-right: 1em;
+    color: #333333;
+}
+
+.puisi {
+    display: flex;
+    margin: 10em 2.5em;
+    justify-content: flex-end;
+}
+
+.picture {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+.picture > figure > img {
+    border-radius: 35px;
+}
+
+.picture > .sky {
+    margin-top: 2.3em;
+}
+
+
+.snow {
+    white-space: pre-line;
+    word-wrap: break-word;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 300;
+    
+}
+
+.poetry {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    margin: 0 auto;
+    line-height: 1.3;
+}
+
+footer {
+    background-color: #006363;
+}
+
+footer .ending {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0;
+    color: #FFFFFF;
+}
+
+footer p {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+footer .penulis {
+    font-size: 12px;
+
+}
+
+a:visited {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .nav-utama {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        justify-content: center;
+        padding: 0.5em;
+    }
+    
+    .nav-utama li a {
+        margin: 0.5em;
+        font-size: 16px;
+    }
+
+    .nav-utama .title {
+        padding-left: 0;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: center; /* Center align nav links */
+        padding: 1em;
+    }
+    
+    .description > .intro {
+        font-size: 30px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    .cover > img {
+        height: auto;
+        max-width: 100%;
+    }
+    
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin: 1em;
+    }
+    
+    .description > h1 {
+        font-size: 30px;
+    }
+    
+    .description > h2 {
+        text-align: center;
+        padding: 1em;
+        font-size: 16px;
+    }
+    
+    .puisi {
+        flex-direction: column;
+        margin: 1em;
+    }
+    
+    .picture {
+        margin: 0;
+    }
+    
+    .picture > figure > img {
+        max-width: 100%;
+    }
+    
+    .snow {
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    .poetry {
+        margin: 3em 0;
+        width: 100%;
+    }
+    
+    footer .ending {
+        padding: 0.5rem;
+    }
+    
+    footer p {
+        font-size: 14px;
+    }
+    
+    footer .penulis {
+        font-size: 10px;
+    }
+}
